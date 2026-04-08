@@ -1,0 +1,751 @@
+:root {
+    --primary-color: #FFFFFF;
+    --secondary-color: #1f2c39;
+    --accent-color: #F71BCA; 
+    --text-light: #d9c6a3; 
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+  }
+
+.bg-secondary {
+    background-color: var(--secondary-color) !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500; 
+}
+
+
+/* Sticky Navbar */
+.navbar {
+    position: fixed; /* Ensures the navbar stays fixed at the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    z-index: 1000; /* Keeps it above all other content */
+    background-color: var(--primary-color); /* Maintains background */
+
+}
+
+body {
+    padding-top: 180px; 
+}
+
+
+nav .nav-link:hover {
+    color: var(--accent-color) !important;
+}
+
+
+.navbar-nav {
+    transform: none;
+    justify-content: center; 
+}
+
+.navbar-nav .nav-link.active {
+    color: var(--accent-color) !important; 
+}
+
+@media (max-width: 768px) {
+  .navbar-brand img {
+    height: 60px !important;
+    max-height: 60px;
+    object-fit: contain;
+  }
+
+  .navbar {
+    height: 80px;
+    padding: 10px 15px;
+  }
+
+  body {
+    padding-top: 100px; /* Adjust top padding for smaller navbar */
+  }
+}
+
+
+
+#ProductsButton:hover {
+    background-color: var(--accent-color) !important;
+    border-color: transparent !important;
+    color: #FFFFFF !important;
+}
+
+#ContactButton:hover {
+    background-color: var(--accent-color) !important;
+    border-color: transparent !important;
+    color: #FFFFFF !important;
+}
+
+.logo img {
+  height: 120px; /* Try 50–70px depending on how bold you want it */
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.navbar-brand img {
+  height: 120px;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+
+.btn-primary {background-color: #F71BCA;}
+
+/*footer */
+footer .nav-link {
+    color: #FFFFFF !important;
+}
+
+footer .nav-link:hover {
+    color: var(--accent-color) !important;
+}
+    
+.pointer:hover {
+    cursor: pointer;
+}
+
+.modal-dialog {
+    max-width: 60%;
+}
+  
+
+  /* Animations ↓*/
+
+  @keyframes SlideUp {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    50% {
+        transform: translateY(-20px);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+  }
+
+  .SlideUp {
+    animation-name: SlideUp;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    opacity: 0;
+  }
+
+  .SlideUp.text {
+    animation-delay: 1s;
+  }
+
+  .SlideUp.button {
+    animation-delay: 1.5s;
+  }
+
+
+    /* Animations Bounce ↓*/
+
+    @keyframes Bounce {
+        0% {
+            transform: translateY(0px);
+        }
+    
+        50% {
+            transform: translateY(-10px);
+        }
+    
+        100% {
+            transform: translateY(0px);
+        }
+      }
+    
+      .Bounce:hover {
+        animation-name: Bounce;
+        animation-duration: 0.4s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+      }
+
+      /* case-study.css */
+.hero {
+    background: url('images/hero-banner.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 96px 32px;
+    text-align: center;
+  }
+  
+  .icon-card {
+    border: none;
+    text-align: center;
+    background: transparent;
+  }
+  
+  .icon-card img {
+    width: 64px;
+    margin-bottom: 16px;
+  }
+  
+  .table-success td {
+    font-weight: bold;
+    background-color: #d4edda;
+  }
+  
+  /*LinkedIn Icon Sizing and hover */
+
+  .linkedin-icon {
+    width: 58px;
+    height: 58px;
+    transition: transform 0.3s ease;
+  }
+  
+  .linkedin-icon:hover {
+    transform: scale(1.3);
+  }
+
+  .text-pink-brand {
+    color: #F71BCA !important;
+  }
+    
+  .text-pink-brand {
+    color: #F71BCA;
+  }
+  
+  .underline {
+    width: 60px;
+    height: 4px;
+    background-color: #F71BCA;
+    border-radius: 2px;
+  }
+  
+  .about-card {
+    border: none;
+    border-left: 10px solid #F71BCA;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    background-color: #ffffff;
+    transition: transform 0.3s ease;
+  }
+  
+  .about-card:hover {
+    transform: translateY(-20px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+  }
+  
+  .about-card p,
+  .about-card ul {
+    color: #333;
+    font-size: 16px;
+    line-height: 1.7;
+  }
+  
+  .about-card ul {
+    padding-left: 20px;
+    list-style-type: disc;
+  }
+ 
+  .team-image:hover {
+    transform: scale(1.1) translateY(-20px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  /*--------Footer-------*/
+
+  .acknowledgement-section {
+  border-top: 1px solid #F71BCA; 
+  font-size: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#case-study-carousel {
+    background-color:var(--secondary-color);
+    padding: 80px 0;
+  }
+  
+  .carousel-title {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 40px;
+    font-weight: bold;
+  }
+  
+  .carousel-slide {
+    min-height: 500px;
+    padding: 20px 0;
+  }
+  
+  .carousel-heading {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: var(--secondary-color)
+  }
+  
+  .carousel-text {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .carousel-button {
+    font-size: 18px;
+    padding: 18px 28px;
+    font-weight: 600;
+    border-radius: 6px;
+  }
+  
+  .carousel-image {
+    max-height: 380px;
+    object-fit: contain;
+  }
+  
+  .carousel-list {
+    font-size: 20px;
+    padding-left: 20px;
+  }
+  
+  .carousel-table {
+    font-size: 17px;
+    margin-top: 20px;
+  }
+
+  .carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #F71BCA;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%; 
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2; 
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(115, 111, 116, 0.3); 
+  border-radius: 50%;
+}
+
+@media (min-width: 768px) {
+  .carousel-control-prev {
+    left: -70px; 
+  }
+  .carousel-control-next {
+    right: -70px; 
+  }
+}
+
+
+
+/* About Us Section*/
+
+.contact-section {
+    padding: 80px 0;
+  }
+
+  .form-control:focus {
+    border-color:var(--accent-color); 
+  }
+
+  .btn-pink {
+    background-color: var(--accent-color);
+    color: white;
+  }
+
+  .btn-pink:hover {
+    background-color: var(--accent-color);
+  }
+
+
+.team-image {
+    height: 400px;
+    object-fit: cover; 
+    border-radius: 12px; 
+    width: 100%; }
+  
+  
+  .team-card {
+    height: 100%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  /* Case Studies Page - Card sizes */
+  .card-img-top {
+    height: 250px; 
+    object-fit: cover;
+    width: 100%; 
+    border-top-left-radius: 12px; 
+    border-top-right-radius: 12px;
+  }
+
+  /*-------index Page Container---- */
+
+/* Container styling */
+.testimonial-container {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: 40px auto;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* Image styling */
+.testimonial-image {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.testimonial-text {
+  position: absolute;
+  bottom: 40px; 
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 15px 20px;
+  border-radius: 10px;
+  max-width: 80%;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+
+  
+  opacity: 0;
+  transform: translate(-80%, 50px); 
+  animation: floatIn 2s ease-out forwards;
+}
+
+
+@keyframes floatIn {
+  0% {
+      opacity: 0;
+      transform: translate(-200%, 50px); 
+  }
+  100% {
+      opacity: 1;
+      transform: translate(-50%, 0); 
+  }
+}
+
+
+.image-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.center-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--secondary-color);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.center-button:hover {
+  background-color: var(--accent-color);
+}
+
+
+.standard-image {
+  height: 480px;         /* Fixes image height */
+  object-fit: cover;     /* Crops to fill without distortion */
+  border: 3px ridge var(--accent-color); /* Light grey border */
+  box-shadow: 0 14px 18px rgba(0, 0, 0, 0.596); /* Soft shadow for visual depth */
+}
+
+#myImage {
+  transition: opacity 0.5s ease;
+  opacity: 1;
+}
+.fade-out {
+  opacity: 0;
+}
+
+@media (min-width: 768px) {
+  .how-it-works {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .step {
+    width: 30%;
+    margin-bottom: 2rem;
+  }
+}
+button {
+  font-size: 1rem;
+  padding: 0.75em 1.5em;
+  margin: 0.5em;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+body {
+  padding: 180px 16px 16px 16px; /* Top Right Bottom Left */
+}
+
+.footer-icon {
+  height: 26px;
+  width: 26px;
+  object-fit: contain;
+  display: inline-block;
+}
+
+
+body {
+  padding-top: 180px;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding-top: 100px; /* Adjust as needed */
+  }
+}
+
+.step-card {
+  width: 100%;
+  max-width: 340px;
+  text-align: center;
+}
+
+.step-img {
+  width: 100%;
+  height: 300px; /* consistent height */
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+@media (max-width: 768px) {
+  .navbar-collapse {
+    background-color: var(--primary-color);
+    padding: 1.5rem;
+    z-index: 9999;
+    position: absolute;
+    top: 80px; /* same as your mobile navbar height */
+    left: 0;
+    width: 100%;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-nav .nav-item {
+    margin-bottom: 1rem;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 1.25rem;
+    text-align: left;
+    padding-left: 0.5rem;
+  }
+}
+
+
+@keyframes popIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+#confirmationMessage {
+  animation: popIn 0.4s ease-in-out;
+}
+
+
+/* ===============================
+   Industries + Section Styling
+   =============================== */
+
+/* Dark band section (matches About Us style) */
+.section-dark {
+  background: var(--secondary-color);
+  padding: 64px 0 36px;
+}
+
+/* Section headings in accent pink */
+.section-dark .section-title {
+  color: var(--accent-color);
+  font-weight: 700;
+  letter-spacing: .2px;
+}
+
+.section-dark .section-subtitle {
+  color: #e9ecef; /* light neutral, readable on dark bg */
+}
+
+/* White content card with pink accent strip */
+.ie-content-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 12px 28px rgba(0,0,0,.08);
+  border-left: 6px solid var(--accent-color);
+  padding: 28px;
+}
+
+/* Navbar active link uses the same accent pink */
+.navbar .nav-link.active {
+  color: var(--accent-color) !important;
+}
+
+/* Filter pills aligned to brand accent */
+.filter-bar .btn {
+  border-radius: 999px;
+  border-color: #dee2e6;
+  color: #444;
+}
+.filter-bar .btn.active,
+.filter-bar .btn:hover {
+  background: var(--accent-color);
+  border-color: var(--accent-color);
+  color: #fff;
+}
+
+/* Industry cards – clean, crisp */
+.industry-card.card {
+  border: 1px solid #eceff3;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,.04);
+  transition: transform .15s ease, box-shadow .15s ease;
+  height: 100%;
+}
+.industry-card.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(0,0,0,.08);
+}
+.industry-card .card-img-top {
+  aspect-ratio: 16/9;
+  object-fit: cover;
+}
+.industry-card .card-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+.industry-card .card-text {
+  color: #6c757d;
+}
+
+/* Balance top and bottom spacing for intro section */
+.section-dark {
+  background: var(--secondary-color);
+  padding: 60px 0;        /* equal top and bottom */
+  position: relative;
+}
+
+.section-dark .ie-content-card {
+  margin-top: 32px;       /* space between text and card */
+  margin-bottom: 0;       /* no extra gap under card */
+}
+/* ===== Industry tiles with overlay headlines ===== */
+.industry-card.card{
+  position: relative;
+  border: 1px solid #eceff3;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,.04);
+  transition: transform .15s ease, box-shadow .15s ease;
+  cursor: pointer;
+  height: 100%;
+}
+.industry-card.card:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(0,0,0,.08);
+}
+
+/* Image area */
+.industry-card .card-img-top{
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  display: block;
+  background: #e9ecef; /* graceful if image missing */
+}
+
+/* Overlay headline band */
+.industry-card .tile-overlay{
+  position: absolute;
+  inset: 0;
+  display: grid;
+  align-content: end;
+  padding: 14px 16px;
+  background: linear-gradient(180deg, rgba(0,0,0,0) 40%, rgba(0,0,0,.55) 100%);
+  color: #fff;
+}
+.industry-card .tile-headline{
+  margin: 0; font-weight: 700; font-size: 1.05rem; line-height: 1.2;
+}
+.industry-card .tile-sub{
+  margin: 2px 0 0; font-size: .9rem; opacity: .9;
+}
+
+/* Small “Learn more” badge on hover */
+.industry-card .learn-more{
+  position: absolute; top: 10px; right: 10px;
+  background: var(--accent-color); color:#fff; border-radius: 999px;
+  font-size: .75rem; padding: 4px 10px; opacity: 0; transition: opacity .15s;
+}
+.industry-card:hover .learn-more{ opacity: 1; }
+
+/* Modals – keep brand feel */
+.modal-header{
+  border-bottom: 0;
+}
+.modal-title{
+  font-weight: 700;
+  color: var(--accent-color);
+}
+.modal .lead{ color:#495057; }
+.modal .badge-soft{
+  background:#fff; border:1px solid #e9ecef; border-radius:999px; padding:.35rem .6rem;
+  font-size:.8rem; color:#495057; margin-right:.35rem;
+}
+/* Form */
+.quote-form {
+  max-width: 700px;   /* keeps it nice and narrow */
+  margin: 0 auto;     /* centres the form horizontally */
+}
+.form-control:focus {
+  border-color: var(--accent-color);
+  box-shadow: 0 0 0 .2rem rgba(247, 27, 202, .25);
+}
+.text-required {
+  color: #e2007a; /* Your brand pink */
+  font-weight: bold;
+}
+
+
+.address-text {
+  font-variant: normal;
+  font-feature-settings: normal;
+}

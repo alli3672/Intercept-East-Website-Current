@@ -1,0 +1,608 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Intercept East | Request Quote</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    >
+    <link rel="stylesheet" href="Style.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    >
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    >
+  </head>
+  <!-- Privacy Policy Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="privacyModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-scrollable modal-dialog-centered">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title fw-bold" id="privacyModalLabel">Privacy Policy</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body">
+
+        <p><strong>Intercept East</strong> is committed to protecting your privacy. We handle personal information in accordance with the <strong>Privacy Act 1988 (Cth)</strong> and the <strong>Australian Privacy Principles</strong>.</p>
+
+        <h6 class="fw-bold mt-3">Information We Collect</h6>
+        <p>We may collect personal information you voluntarily provide, including your name, email address, phone number, company name, and enquiry details.</p>
+        <p>We may also collect limited technical data such as IP address, browser type, and pages visited to improve website performance.</p>
+
+        <h6 class="fw-bold mt-3">How We Use Information</h6>
+        <ul>
+          <li>Respond to enquiries and requests</li>
+          <li>Provide information about our products and services</li>
+          <li>Improve website functionality and user experience</li>
+          <li>Meet legal and regulatory obligations</li>
+        </ul>
+
+        <h6 class="fw-bold mt-3">Disclosure</h6>
+        <p>We do not sell or rent personal information. Information may be shared with trusted service providers or disclosed where required by law.</p>
+
+        <h6 class="fw-bold mt-3">Data Security</h6>
+        <p>Reasonable steps are taken to protect personal information from misuse, loss, unauthorised access, modification, or disclosure. Information is retained only as long as necessary.</p>
+
+        <h6 class="fw-bold mt-3">Cookies</h6>
+        <p>This website may use cookies and analytics tools to improve performance. You can disable cookies in your browser settings.</p>
+
+        <h6 class="fw-bold mt-3">Access & Corrections</h6>
+        <p>You may request access to or correction of your personal information by contacting us.</p>
+
+        <h6 class="fw-bold mt-3">Contact</h6>
+        <p class="mb-0">
+          <strong>Intercept East</strong><br>
+          Email: <a href="mailto:sales@intercepteast.com.au">sales@intercepteast.com.au</a><br>
+          Phone: <a href="tel:0428607224">0428 607 224</a>
+        </p>
+
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+  <body>
+    <!-- Navigation -->
+    <header>
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-pink py-4">
+        <div class="container-fluid px-5 d-flex align-items-center">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/Logo_IE.png" alt="Intercept East Logo" height="120">
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarExample01"
+            aria-controls="navbarExample01"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarExample01">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-4 fs-4 fw-bold">
+              <li class="nav-item">
+                <a class="nav-link Bounce" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link Bounce" href="about.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link Bounce" href="Products.html">Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link Bounce" href="industries.html">Industries We Serve</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link Bounce" href="casestudies.html">Case Studies</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link Bounce" href="contact.html">Contact Us</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link Bounce nav-link active" aria-current="page" href="quote.html">Request Quote</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Navbar -->
+      <style>
+        body {
+          margin: 0;
+          font-family: Arial, sans-serif;
+        }
+      </style>
+    </header>
+<main>
+
+  <!-- Hero section with catalogue download inside -->
+  <section class="py-5" style="background-color:#111827; color:#ffffff;">
+    <div class="container">
+      <div class="row justify-content-center text-center mb-4">
+        <div class="col-lg-8">
+          <h1 class="text-pink-brand mb-3">Request a Quote</h1>
+          <p class="fs-5 fw-medium mb-0">
+            Select the type of quote you need and complete the relevant details below.
+          </p>
+        </div>
+      </div>
+
+      <!-- Catalogue download panel moved up into hero -->
+      <div class="row justify-content-center">
+        <div class="col-lg-9">
+          <div class="bg-white text-dark rounded-4 p-4 d-flex flex-column flex-md-row align-items-md-center justify-content-between shadow-sm">
+            <div class="mb-3 mb-md-0">
+              <h5 class="mb-1">Need full product details?</h5>
+              <p class="mb-0">
+                Download the latest Intercept East Product Catalogue for full specifications, sizes and item numbers.
+              </p>
+            </div>
+            <a
+             href="downloads/Intercept-East-Product-Catalogue-2025-2026"
+             class="btn btn-pink fw-semibold px-4 py-2 rounded-pill"
+            target="_blank"
+            rel="noopener"
+>
+  Download Catalogue (PDF)
+</a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Form section only (no extra cards, nice light background) -->
+  <section class="py-5" style="background-color:#f7f7f8;">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-9">
+          <form
+            action="process-quote.php"
+            method="POST"
+            enctype="multipart/form-data"
+            class="border rounded-4 p-4 p-md-5 shadow-sm bg-white quote-form"
+          >
+
+            <!-- ===== Contact Details ===== -->
+            <h5 class="fw-bold text-secondary mb-3">Contact Details</h5>
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="name" class="form-label fw-semibold"> Your Name <span class="text-required">*</span></label>
+                <input type="text" class="form-control" id="name" name="name" required>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="company" class="form-label fw-semibold">Company Name<span class="text-required">*</span></label>
+                <input type="text" class="form-control" id="company" name="company" required>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="email" class="form-label fw-semibold">Email Address<span class="text-required">*</span></label>
+                <input type="email" class="form-control" id="email" name="email" required>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="phone" class="form-label fw-semibold">Phone Number<span class="text-required">*</span></label>
+                <input type="tel" class="form-control" id="phone" name="phone" required>
+                <div class="form-text">Include area code if applicable.</div>
+              </div>
+            </div>
+
+            <!-- ===== Shipping Address ===== -->
+            <h5 class="fw-bold text-secondary mt-4 mb-3">
+  Shipping Address <span class="text-required">*</span>
+</h5>
+
+<div class="mb-3">
+  <label for="street" class="form-label fw-semibold">
+    Street Address <span class="text-required">*</span>
+  </label>
+  <input
+    type="text"
+    class="form-control"
+    id="street"
+    name="street"
+    placeholder="123 Example St"
+    required
+  >
+</div>
+
+<div class="row">
+  <div class="col-md-6 mb-3">
+    <label for="city" class="form-label fw-semibold">
+      Suburb / City <span class="text-required">*</span>
+    </label>
+    <input
+      type="text"
+      class="form-control"
+      id="city"
+      name="city"
+      required
+    >
+  </div>
+
+  <div class="col-md-3 mb-3">
+    <label for="state" class="form-label fw-semibold">
+      State <span class="text-required">*</span>
+    </label>
+    <select class="form-select" id="state" name="state" required>
+      <option value="" selected disabled>Select</option>
+      <option>ACT</option>
+      <option>NSW</option>
+      <option>NT</option>
+      <option>QLD</option>
+      <option>SA</option>
+      <option>TAS</option>
+      <option>VIC</option>
+      <option>WA</option>
+    </select>
+  </div>
+
+  <div class="col-md-3 mb-3">
+    <label for="postcode" class="form-label fw-semibold">
+      Postcode <span class="text-required">*</span>
+    </label>
+    <input
+      type="text"
+      class="form-control"
+      id="postcode"
+      name="postcode"
+      required
+    >
+  </div>
+</div>
+
+<div class="mb-4">
+  <label for="country" class="form-label fw-semibold">
+    Country <span class="text-required">*</span>
+  </label>
+  <select class="form-select" id="country" name="country" required>
+    <option value="Australia" selected>Australia</option>
+    <option value="New Zealand">New Zealand</option>
+    <option value="Other">Other</option>
+  </select>
+</div>
+
+            <!-- ===== Quote Type ===== -->
+            <h5 class="fw-bold text-secondary mb-3"> Quote Type <span class="text-required">*</span></h5>
+            <div class="d-flex flex-wrap gap-4 mb-3">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="quoteType"
+                  id="wrapQuote"
+                  value="wrap"
+                  checked
+                >
+                <label class="form-check-label" for="wrapQuote">Wrap / Freight</label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="quoteType"
+                  id="productQuote"
+                  value="product"
+                >
+                <label class="form-check-label" for="productQuote">Product</label>
+              </div>
+            </div>
+
+            <!-- ===== Wrap / Freight Section ===== -->
+            <div id="wrapSection">
+              <h6 class="fw-bold text-secondary mt-3">Wrap Details</h6>
+              <div class="row">
+                <div class="col-md-4 mb-3">
+                  <label for="length" class="form-label">Length (cm)</label>
+                  <input type="number" class="form-control" id="length" name="length">
+                </div>
+                <div class="col-md-4 mb-3">
+                  <label for="width" class="form-label">Width (cm)</label>
+                  <input type="number" class="form-control" id="width" name="width">
+                </div>
+                <div class="col-md-4 mb-3">
+                  <label for="height" class="form-label">Height (cm)</label>
+                  <input type="number" class="form-control" id="height" name="height">
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="weight" class="form-label">Weight (kg)</label>
+                <input type="number" class="form-control" id="weight" name="weight" step="0.1">
+              </div>
+              <div class="mb-3">
+                <label for="photo" class="form-label">Upload Photo (optional)</label>
+                <input
+                  class="form-control"
+                  type="file"
+                  id="photo"
+                  name="photo"
+                  accept="image/*,video/*"
+                >
+              </div>
+            </div>
+
+            <!-- ===== Product Section ===== -->
+            <div id="productSection" style="display:none;">
+              <h6 class="fw-bold text-secondary mt-3">Product Details</h6>
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <label for="product-code" class="form-label">Product<span class="text-required">*</span></label>
+                  <select class="form-select" id="product-code" name="product-code">
+                    <option value="" selected disabled>Select a product</option>
+
+                    <!-- PLASTIC FILMS -->
+                    <optgroup label="Plastic Films">
+                      <option value="URPF-010">URPF-010 – Intercept Anti-Corrosion UV Heat Shrink Film</option>
+                      <option value="URPF-085">URPF-085 – Low Slip No Shrink Clear</option>
+                      <option value="URPF-100">URPF-100 – Powershrink UV Plastic Film White</option>
+                      <option value="URPF-110FR">URPF-110FR – Powershrink UV Film (FR)</option>
+                      <option value="URPF-116">URPF-116 – Powershrink UV Plastic Film White</option>
+                      <option value="URPF-120">URPF-120 – Powershrink UV Plastic Film White</option>
+                      <option value="URPF-125">URPF-125 – Powershrink UV Plastic Film Clear</option>
+                      <option value="URPF-130">URPF-130 – Stretch Film Clear 450m x 500mm</option>
+                      <option value="UROP-020">UROP-020 – Shrink UV Clear Pallet Bags on Roll</option>
+                      <option value="UROP-022">UROP-022 – Shrink UV Clear Drum Bags on Roll</option>
+                    </optgroup>
+
+                    <!-- ADD-ONS / WINDOWS / LABELS -->
+                    <optgroup label="Add-Ons (Doors, Windows, Ports & Labels)">
+                      <option value="URAO-020">URAO-020 – Zip Door, 2 x 2m Pre-sewn Zips</option>
+                      <option value="URAO-050">URAO-050 – Zip Door, 2 x 3m Pre-sewn Zips</option>
+                      <option value="URAO-067">URAO-067 – Flat Water Drain with Intercept Foam</option>
+                      <option value="URAO-074">URAO-074 – Zippered Window / Inspection Port</option>
+                      <option value="URAO-074RF">URAO-074RF – Zippered Window / Port with Rain Flap</option>
+                      <option value="URAO-075">URAO-075 – Zippered Window / Inspection Port</option>
+                      <option value="URAO-075RF">URAO-075RF – Zippered Window / Port with Rain Flap</option>
+                      <option value="URAO-080">URAO-080 – Zippered Window / Port 0.8m x 0.6m</option>
+                      <option value="URAO-080RF">URAO-080RF – Zippered Window / Port 0.8m x 0.6m RF</option>
+                      <option value="URAO-095RF">URAO-095RF – Window 0.6m x 0.6m with Rain Flap</option>
+                      <option value="URAO-130">URAO-130 – Banana-Shape Zippered Window 1m x 0.3m</option>
+                      <option value="URAO-DNC">URAO-DNC – “Do Not Cut” Self-Adhesive Label</option>
+                      <option value="URAO-CP-S">URAO-CP-S – Small “Corrosion Protected” Label</option>
+                      <option value="URAO-CP-M">URAO-CP-M – Medium “Corrosion Protected” Label</option>
+                      <option value="URAO-CP-L">URAO-CP-L – Large “Corrosion Protected” Label</option>
+                    </optgroup>
+
+                    <!-- INTERCEPT BAGS -->
+                    <optgroup label="Intercept Bags (Corrosion & Static Dissipative)">
+                      <option value="URICC-120Z">URICC-120Z – Corrosion Intercept (Copper) Plastic Bag</option>
+                      <option value="URICC-155Z">URICC-155Z – Corrosion Intercept (Copper) Plastic Bag</option>
+                      <option value="URICC-160">URICC-160 – Corrosion Intercept (Copper) Plastic Bag</option>
+                      <option value="URICC-161Z">URICC-161Z – Corrosion Intercept (Copper) Plastic Bag</option>
+                      <option value="URICC-165Z">URICC-165Z – Corrosion Intercept (Copper) Plastic Bag</option>
+                      <option value="URICC-170">URICC-170 – Intercept Corrosion Control (Copper) Bag</option>
+                      <option value="URICC-170TZ">URICC-170TZ – Translucent Corrosion Intercept Bag</option>
+                      <option value="URICC-175">URICC-175 – Corrosion Intercept Copper Perforated Flat</option>
+                      <option value="URICC-110Z">URICC-110Z – Static Dissipative + Intercept Bag</option>
+                      <option value="URICC-SI-120Z">URICC-SI-120Z – Static Dissipative + Intercept Bag</option>
+                      <option value="URICC-130Z">URICC-130Z – Static Dissipative + Intercept Bag</option>
+                      <option value="URICC-140">URICC-140 – Static Dissipative + Intercept Bag</option>
+                      <option value="URICC-145">URICC-145 – Static Dissipative + Intercept Bag</option>
+                    </optgroup>
+
+                    <!-- DESICCANTS & ABSORBERS -->
+                    <optgroup label="Desiccants & Absorbers">
+                      <option value="IA-50G">IA-50G – Calcium Chloride Gel Desiccant 50g</option>
+                      <option value="IA-125G">IA-125G – Calcium Chloride Gel 125g Tyvek</option>
+                      <option value="IA-500">IA-500 – Calcium Chloride Desiccant 500g</option>
+                      <option value="URDE-ABS10">URDE-ABS10 – Calcium Chloride & Silica Gel Desiccant</option>
+                      <option value="URDE-ABS01">URDE-ABS01 – Calcium Chloride Desiccant</option>
+                      <option value="IA-CODC-91-10">IA-CODC-91-10 – Calcium Chloride Desiccant Strip</option>
+                      <option value="IA-CODB-91-10">IA-CODB-91-10 – Dry Pole 1kg with Hook</option>
+                    </optgroup>
+
+                    <!-- HARDWARE, TOOLS & CONSUMABLES -->
+                    <optgroup label="Hardware, Tools & Consumables">
+                      <option value="URHW-010">URHW-010 – Buckles 19mm Webbing</option>
+                      <option value="URHW-011">URHW-011 – Cardboard Angle 1750 x 50</option>
+                      <option value="URHW-061">URHW-061 – Poly Woven Strapping</option>
+                      <option value="URTO-060">URTO-060 – Tensioner to Suit 19mm Poly</option>
+                      <option value="URTO-091">URTO-091 – Film Portable Dispenser</option>
+                      <option value="URTO-040">URTO-040 – Heat-Resistant Gloves (Pair)</option>
+                      <option value="URTO-RIPACK">URTO-RIPACK – Ripack 3000 Heat Gun</option>
+                      <option value="URTO-011">URTO-011 – Igniter for Ripack 2200</option>
+                      <option value="URTO-027">URTO-027 – Combustion Nozzle for Ripack</option>
+                      <option value="URTO-019">URTO-019 – Spark Plug for Ripack 2200</option>
+                      <option value="URTO-016">URTO-016 – Replacement Gas Hose 10m</option>
+                      <option value="URTO-020">URTO-020 – Big Red Heat Gun</option>
+                      <option value="URTO-030">URTO-030 – Big Red Extension</option>
+                    </optgroup>
+
+                  </select>
+                  <div class="form-text">
+                    If your product is not listed, please enter the code and details in the notes field below.
+                  </div>
+                </div>
+
+                <div class="col-md-6 mb-3">
+                  <label for="quantity" class="form-label">Quantity<span class="text-required">*</span></label>
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="quantity"
+                    name="quantity"
+                    min="1"
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- ===== Notes ===== -->
+            <div class="mb-4">
+              <label for="notes" class="form-label fw-semibold">Additional Information</label>
+              <textarea
+                class="form-control"
+                id="notes"
+                name="notes"
+                rows="4"
+                placeholder="Any special requirements, product variations or delivery instructions…"
+              ></textarea>
+            </div>
+
+            <div class="text-end">
+              <button
+                type="submit"
+                class="btn btn-pink px-4 py-2 fw-bold rounded-pill"
+              >
+                Submit Request
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="py-4">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-9">
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center small-help-panel">
+          <div class="mb-2 mb-md-0">
+            <h6 class="fw-bold mb-1">Need help with your quote?</h6>
+            <p class="mb-0 text-muted">
+              If you are unsure which product is right, send what you know and our team will recommend an option.
+            </p>
+          </div>
+          <div class="text-md-end">
+            <div>📞 <a href="tel:0428607224" class="text-decoration-none">0428 607 224</a></div>
+            <div>📧 <a href="mailto:sales@intercepteast.com.au" class="text-decoration-none">sales@intercepteast.com.au</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+
+    <!-- Footer -->
+<footer class="bg-secondary p-4">
+  <div class="container">
+    <div class="row">
+      <!-- Column 1: Intercept East -->
+      <div class="col-12 col-md-3 mb-4 mb-md-0">
+        <h5 class="text-white fw-bold mb-3">Intercept East</h5>
+        <a class="nav-link text-white mb-2" href="about.html">About Us</a>
+        <a class="nav-link text-white mb-2"
+          href="downloads/Ethical Sourcing Policy.pdf"
+          target="_blank"
+          rel="noopener"> Ethical Sourcing Policy</a>
+      </div>
+
+      <!-- Column 2: Quick Links -->
+      <div class="col-12 col-md-3 mb-4 mb-md-0">
+        <h5 class="text-white fw-bold mb-3">Quick Links</h5>
+        <a class="nav-link text-white mb-2" href="index.html">Home</a>
+        <a class="nav-link text-white mb-2" href="Products.html">Products</a>
+        <a class="nav-link text-white mb-2" href="industries.html">Industries We Serve</a>
+      </div>
+
+      <!-- Column 3: Resources -->
+      <div class="col-12 col-md-3 mb-4 mb-md-0">
+        <h5 class="text-white fw-bold mb-3">Resources</h5>
+        <a class="nav-link text-white mb-2" href="quote.html">Request Quote</a>
+        <a class="nav-link text-white mb-2" href="casestudies.html">Case Studies</a>
+        <a class="nav-link text-white mb-2 pointer" data-bs-toggle="modal" data-bs-target="#exampleModal">Privacy Policy</a>
+      </div>
+
+      <!-- Column 4: Contact & Social Media -->
+      <div class="col-12 col-md-3 d-flex flex-column align-items-start">
+        <h5 class="text-white fw-bold mb-3">Contact & Social Media</h5>
+
+        <div class="d-flex align-items-center mb-3">
+          <img src="images/linkedin-svgrepo-com.svg" alt="LinkedIn Logo" class="footer-icon me-2">
+          <a href="https://www.linkedin.com/company/baseline-maintenance-pty-ltd" target="_blank" class="text-white text-decoration-none">
+            Follow us on LinkedIn
+          </a>
+        </div>
+
+        <div class="d-flex align-items-center mb-3">
+          <img src="images/email-address-svgrepo-com.svg" alt="Email Icon" class="footer-icon me-2">
+          <a href="mailto:sales@intercepteast.com.au" class="text-white text-decoration-none">
+            sales@intercepteast.com.au
+          </a>
+        </div>
+
+        <div class="d-flex align-items-center">
+          <img src="images/phone-call-svgrepo-com.svg" alt="Phone Icon" class="footer-icon me-2">
+          <a href="tel:0428607224" class="text-white text-decoration-none">
+            0428 607 224
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Credit line -->
+    <hr class="border-light opacity-25 my-4">
+
+    <div class="d-flex flex-column flex-md-row justify-content-between align-items-center small text-white-50">
+      <div class="mb-2 mb-md-0">
+        &copy; <span id="year"></span> Intercept East. All rights reserved.
+      </div>
+     <div class="mt-3 text-white-50 small">
+  Website by Allison Stratton from
+  <a href="https://outsourceadvantage.com.au"
+     class="text-white text-decoration-underline fw-semibold"
+     target="_blank"
+     rel="noopener">
+    Outsource Advantage
+  </a>
+</div>
+    </div>
+
+  </div>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const wrapRadio = document.getElementById("wrapQuote");
+        const productRadio = document.getElementById("productQuote");
+        const wrapSection = document.getElementById("wrapSection");
+        const productSection = document.getElementById("productSection");
+
+        function toggleSections() {
+          const isProduct = productRadio.checked;
+          wrapSection.style.display = isProduct ? "none" : "block";
+          productSection.style.display = isProduct ? "block" : "none";
+        }
+
+        toggleSections();
+        wrapRadio.addEventListener("change", toggleSections);
+        productRadio.addEventListener("change", toggleSections);
+      });
+    </script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

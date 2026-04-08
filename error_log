@@ -1,0 +1,29 @@
+[05-Feb-2026 09:01:48 UTC] PHP Warning:  require(/home/owtesodm/public_html/site/phpmailer/PHPMailer.php): Failed to open stream: No such file or directory in /home/owtesodm/public_html/site/process-quote.php on line 11
+[05-Feb-2026 09:01:48 UTC] PHP Warning:  require(/home/owtesodm/public_html/site/phpmailer/PHPMailer.php): Failed to open stream: No such file or directory in /home/owtesodm/public_html/site/process-quote.php on line 11
+[05-Feb-2026 09:01:48 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/owtesodm/public_html/site/phpmailer/PHPMailer.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/owtesodm/public_html/site/process-quote.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/owtesodm/public_html/site/process-quote.php on line 11
+[05-Feb-2026 09:06:59 UTC] PHP Warning:  require(/home/owtesodm/public_html/site/phpmailer/PHPMailer.php): Failed to open stream: No such file or directory in /home/owtesodm/public_html/site/process-quote.php on line 11
+[05-Feb-2026 09:06:59 UTC] PHP Warning:  require(/home/owtesodm/public_html/site/phpmailer/PHPMailer.php): Failed to open stream: No such file or directory in /home/owtesodm/public_html/site/process-quote.php on line 11
+[05-Feb-2026 09:06:59 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/owtesodm/public_html/site/phpmailer/PHPMailer.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/owtesodm/public_html/site/process-quote.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/owtesodm/public_html/site/process-quote.php on line 11
+[05-Feb-2026 09:10:07 UTC] PHP Warning:  require(/home/owtesodm/public_html/site/phpmailer/PHPMailer.php): Failed to open stream: No such file or directory in /home/owtesodm/public_html/site/process-quote.php on line 11
+[05-Feb-2026 09:10:07 UTC] PHP Warning:  require(/home/owtesodm/public_html/site/phpmailer/PHPMailer.php): Failed to open stream: No such file or directory in /home/owtesodm/public_html/site/process-quote.php on line 11
+[05-Feb-2026 09:10:07 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/owtesodm/public_html/site/phpmailer/PHPMailer.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/owtesodm/public_html/site/process-quote.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/owtesodm/public_html/site/process-quote.php on line 11
+[05-Feb-2026 09:12:24 UTC] PHP Warning:  require(/home/owtesodm/public_html/site/phpmailer/PHPMailer.php): Failed to open stream: No such file or directory in /home/owtesodm/public_html/site/process-quote.php on line 15
+[05-Feb-2026 09:12:24 UTC] PHP Warning:  require(/home/owtesodm/public_html/site/phpmailer/PHPMailer.php): Failed to open stream: No such file or directory in /home/owtesodm/public_html/site/process-quote.php on line 15
+[05-Feb-2026 09:12:24 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/owtesodm/public_html/site/phpmailer/PHPMailer.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/owtesodm/public_html/site/process-quote.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/owtesodm/public_html/site/process-quote.php on line 15
+[05-Feb-2026 09:16:41 UTC] PHP Fatal error:  Uncaught Error: Class "PHPMailer\PHPMailer\PHPMailer" not found in /home/owtesodm/public_html/site/process-quote.php:170
+Stack trace:
+#0 {main}
+  thrown in /home/owtesodm/public_html/site/process-quote.php on line 170
+[05-Feb-2026 09:41:51 UTC] PHP Warning:  Undefined variable $t in /home/owtesodm/public_html/site/process-quote.php on line 57
