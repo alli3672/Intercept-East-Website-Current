@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://intercepteast.com.au/sitemap.xml
